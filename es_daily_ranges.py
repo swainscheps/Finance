@@ -1,5 +1,5 @@
 # es_daily_ranges.py
-# Builds a CSV of the last ~6 months of /ES daily ranges (high - low, in points).
+# Builds a CSV of the last ~9 months of /ES daily ranges (high - low, in points).
 #
 # Setup (once):   pip install yfinance pandas
 # Run:            python es_daily_ranges.py
@@ -8,7 +8,7 @@
 import pandas as pd
 import yfinance as yf
 
-df = yf.download("ES=F", period="6mo", interval="1d",
+df = yf.download("ES=F", period="9mo", interval="1d",
                  auto_adjust=False, progress=False)
 
 # Newer yfinance versions return multi-level column names; flatten them.

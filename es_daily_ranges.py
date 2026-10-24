@@ -20,7 +20,7 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
  
-PERIOD = "9mo"        # hardcoded event dates below start Dec 2025
+PERIOD = "5y"        # hardcoded event dates below start Dec 2025
 WIDE_RATIO = 1.5      # prev-day range >= 1.5x its prior-20-day avg -> "wide"
 NARROW_RATIO = 0.7    # prev-day range <= 0.7x -> "narrow"
 OUT_FILE = "es_daily_ranges.csv"
